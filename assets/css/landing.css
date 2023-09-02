@@ -346,19 +346,19 @@ section.planning .row .planning-photos .row .card {
 }
 
 section.planning .row .planning-photos .row .card1 {
-    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../../../assets/imgs/card\ 1.jpg);
+    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../imgs/card1.jpg);
 }
 
 section.planning .row .planning-photos .row .card2 {
-    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../../../assets/imgs/card2.jpg);
+    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../imgs/card2.jpg);
 }
 
 section.planning .row .planning-photos .row .card3 {
-    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../../../assets/imgs/card3.jpg);
+    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../imgs/card3.jpg);
 }
 
 section.planning .row .planning-photos .row .card4 {
-    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../../../assets/imgs/card4.jpg);
+    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../imgs/card4.jpg);
 }
 
 section.planning .row .planning-photos .row {
