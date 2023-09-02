@@ -1,0 +1,1491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    --main-color: #d9dae0;
+    --main-color2: #ffffff;
+    --second-color: #f05510;
+    --p-color: #111111;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 700px;
+    line-height: 1.1;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.heading p {
+    font-family: 'Open Sans', sans-serif;
+    padding: 40px 440px;
+    color: #808080;
+    line-height: 28px;
+}
+
+p {
+    color: var(--p-color);
+}
+
+button.contact {
+    margin-top: 20px;
+    padding: 20px 65px;
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 40px;
+}
+
+button.contact>a {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+button.contact:hover {
+    animation: vibration .1s infinite;
+    background-color: #111111;
+}
+
+@keyframes vibration {
+    0% {
+        transform: rotate(0.5deg);
+    }
+
+    25% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-0.5deg);
+    }
+
+    75% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0.5deg);
+    }
+}
+
+header {
+    width: 100%;
+}
+
+header .row {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border-bottom: 1px solid #ededf0;
+}
+
+header .logo>img {
+    width: 110px;
+    height: 40px;
+}
+
+header .row .menu-btn {
+    display: none;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+header .row .menu-btn:hover {
+    color: var(--second-color);
+}
+
+header .nav-btn ul {
+    margin-top: 12px;
+}
+
+header .nav-btn ul li {
+    padding-left: 25px;
+}
+
+header .nav-btn ul li a {
+    color: var(--p-color);
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 27px;
+}
+
+header .nav-btn ul li a:hover {
+    color: var(--second-color);
+    border-color: var(--second-color);
+}
+
+main .container {
+    background-color: var(--main-color);
+}
+
+main .container .row {
+    width: 100%;
+}
+
+main .container .row .main-img {
+    width: 50%;
+}
+
+main .container .row .main-img img {
+    width: 100%;
+}
+
+main .container .row .main-caption {
+    width: 50%;
+    padding-right: 320px;
+    margin-top: 180px;
+}
+
+main .container .row .main-caption h1 {
+    font-size: 52px;
+    padding-bottom: 20px;
+}
+
+main .container .row .main-caption p {
+    font-size: 22px;
+    color: #111111;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+
+main .container .row .main-caption p>i {
+    color: var(--second-color);
+    font-size: 24px;
+}
+
+.our-services {
+    background-color: var(--main-color);
+}
+
+.our-services .container {
+    width: 75%;
+    margin: auto;
+    padding: 70px 0;
+}
+
+.our-services .container .row .our-services-caption {
+    width: 45%;
+}
+
+.our-services .container .row .our-services-caption .cards {
+    margin-top: 126px;
+}
+
+.our-services .container .row .our-services-caption .cards .row {
+    margin-bottom: 10px;
+}
+
+.our-services .container .row .our-services-caption .cards .row .card {
+    width: 48%;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.our-services .container .row .our-services-caption .cards .row .card img {
+    height: 70px;
+    width: 70px;
+}
+
+.our-services .container .row .our-services-caption .cards .row .card h3 {
+    color: #808080;
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.our-services .container .row .our-services-img {
+    width: 50%;
+}
+
+.our-services .container .row .our-services-img img {
+    width: 100%;
+}
+
+.complete-desing .container {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.complete-desing .container .row {
+    width: 70%;
+    margin: auto;
+}
+
+.complete-desing .container .row .card {
+    width: 31%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.complete-desing .container .row .card h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.complete-desing .container .row .card img {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 210px;
+}
+
+.complete-desing .container .row .card p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.complete-desing .container .row .card a {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #c0c0c0;
+    transition: all 0.2s;
+}
+
+.complete-desing .container .row .card a:hover {
+    border-color: var(--second-color);
+}
+
+.complete-desing .container button {
+    margin-top: 50px;
+    padding: 20px 60px;
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 40px;
+    transition: all 0.3s;
+}
+
+.complete-desing .container button:hover {
+    background-color: black;
+}
+
+.complete-desing .container button a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.rooms {
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 70px;
+}
+
+.rooms h2 {
+    padding: 0px 250px 50px;
+}
+
+.rooms .row {
+    width: 80%;
+    margin: auto;
+}
+
+.rooms .row .card {
+    width: 32%;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.rooms .row .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 17px 10px #f0531031;
+}
+
+.rooms .row .card .caption {
+    padding: 20px 30px;
+}
+
+.rooms .row .card img {
+    width: 100%;
+    height: 250px;
+}
+
+.rooms .row .card h3 {
+    font-size: 28px;
+}
+
+.rooms .row .card h4 {
+    font-size: 25px;
+    color: var(--second-color);
+    margin: 20px 0;
+}
+
+.rooms .row .card p {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.rooms .row .card a {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #c0c0c0;
+    transition: all 0.2s;
+}
+
+.rooms .row .card a:hover {
+    border-color: var(--second-color);
+}
+
+.grids .container {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.grids .container .row {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 9px;
+}
+
+.grids .container .row .caption {
+    width: 24%;
+    padding: 35px 20px 0 0;
+}
+
+.grids .container .row .caption p {
+    color: #a7a4a4;
+    font-size: 16px;
+}
+
+.grids .container .row .first-img {
+    width: 24%;
+}
+
+.grids .container .row .second-img {
+    width: 50%;
+}
+
+.grids .container .row img {
+    width: 100%;
+    height: 350px;
+    filter: grayscale(1);
+    transition: all 0.5s;
+}
+
+.grids .container .row img:hover {
+    filter: none;
+}
+
+.grids .container .row .third-img {
+    width: 49%;
+}
+
+.grids .container .row .fourth-img {
+    width: 25%;
+}
+
+.grids .container .row .caption p {
+    margin-bottom: 25px;
+    line-height: 22px;
+}
+
+.grids .container .row .caption a {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #c0c0c0;
+    transition: all 0.2s;
+}
+
+.grids .container .row .caption a:hover {
+    border-color: var(--second-color);
+}
+
+.company {
+    background-color: var(--main-color);
+    padding: 70px 0;
+}
+
+.company .row {
+    width: 70%;
+    margin: auto;
+}
+
+.company .row .company-caption {
+    width: 50%;
+}
+
+.company .row .company-caption h5 {
+    font-size: 20px;
+    margin: 50px 0;
+    font-weight: 600;
+}
+
+.company .row .company-caption p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.company .row .card {
+    width: 46%;
+    background-color: #fff;
+    padding: 50px;
+    margin-left: auto;
+}
+
+.company .row .card ul {
+    flex-direction: column;
+}
+
+.company .row .card ul li {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.company .row .card ul li i {
+    padding-right: 10px;
+}
+
+.company .row .card img {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.offers {
+    padding: 70px 0;
+}
+
+.offers .row {
+    width: 70%;
+    margin: auto;
+}
+
+.offers .row .left-card {
+    width: 40%;
+}
+
+.offers .row .left-card img {
+    width: 100%;
+}
+
+.offers .row .left-card h3 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.offers .row .left-card p {
+    font-size: 17px;
+    padding-right: 20px;
+}
+
+.offers .row .right-card {
+    width: 52%;
+}
+
+.offers .row .right-card .caption {
+    padding: 30px 20px;
+    background-color: var(--main-color);
+}
+
+.offers .row .right-card .caption i {
+    font-size: 60px;
+    color: var(--second-color);
+    padding-bottom: 20px;
+}
+
+.offers .row .right-card .caption p {
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 30px;
+    padding-right: 30px;
+}
+
+.offers .row .right-card .caption2 {
+    padding: 50px 30px;
+}
+
+.offers .row .right-card .caption2 p {
+    margin-bottom: 20px;
+}
+
+.offers .row .right-card .caption2 button {
+    padding: 22px 50px;
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 40px;
+}
+
+.offers .row .right-card .caption2 button>a {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.offers .row .right-card .caption2 button:hover {
+    background-color: #111111;
+}
+
+.portfolio {
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 70px 0;
+}
+
+.portfolio h2 {
+    position: relative;
+    letter-spacing: 2px;
+    margin-bottom: 90px;
+}
+
+.portfolio h2::before {
+    content: "";
+    width: 110px;
+    height: 2px;
+    background-color: #111111;
+    display: block;
+    position: absolute;
+    top: 120%;
+    left: 46%;
+}
+
+.portfolio h2::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 103%;
+    left: 49%;
+}
+
+.portfolio .row {
+    width: 50%;
+    margin: auto;
+}
+
+.portfolio .row .imgs {
+    width: 33%;
+    position: relative;
+}
+
+.portfolio .row .imgs img {
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+    transition: all 0.5px;
+    filter: blur(1px);
+}
+
+.portfolio .row .imgs img:hover {
+    filter: none;
+}
+
+.portfolio p {
+    font-size: 40px;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    font-weight: lighter;
+    padding: 0 30px;
+}
+
+.contacts {
+    padding: 70px 0;
+    background-color: var(--second-color);
+}
+
+.contacts .contact-card .row {
+    padding: 30px 20px;
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+}
+
+.contacts .contact-card .row .left {
+    width: 49%;
+}
+
+.contacts .contact-card .row .left p {
+    margin: 25px 0;
+}
+
+.contacts .contact-card .row .right {
+    width: 48%;
+}
+
+.contacts .contact-card .row .right h4 {
+    font-size: 35px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.contacts .contact-card .row .right p {
+    margin: 25px 0;
+    padding-right: 80px;
+}
+
+.contacts .contact-card .row .right input {
+    height: 45px;
+    width: 55%;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 40px;
+    color: #808080;
+    border: 2px solid #d9dae0;
+    background-color: #d9dae0;
+}
+.contacts .contact-card .row .right input:focus{
+    border-color: var(--second-color);
+    outline: none;
+    transition: 0.3s;
+}
+
+.contacts .contact-card .row .right button {
+    padding: 20px 50px;
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: var(--second-color);
+    border: none;
+    transition: all 0.2s;
+}
+
+.contacts .contact-card .row .right button:hover {
+    background-color: #111111;
+}
+
+.contacts .contact-card .row .right button a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contacts .row2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.contacts .row2 .card {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.contacts .row2 .card i {
+    font-size: 30px;
+}
+
+.contacts .row2 .card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.contacts .row2 .card p {
+    font-size: 18px;
+    color: white;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #333333;
+}
+
+footer .copy p span {
+    color: var(--second-color);
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+footer .copy {
+    margin-top: 90px;
+}
+
+footer .copy a {
+    color: var(--second-color);
+}
+
+@media(max-width:950px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    .heading {
+        padding-top: 50px;
+    }
+
+    .heading p {
+        padding: 40px 90px;
+        color: #808080;
+        font-size: 22px;
+    }
+
+    button.contact {
+        margin: 30px 0;
+        padding: 30px 75px;
+    }
+
+    button.contact>a {
+        font-size: 18px;
+    }
+
+    header .logo>img {
+        width: 120px;
+        height: 45px;
+    }
+
+    header .row .menu-btn {
+        display: block;
+        margin-left: auto;
+        margin-top: 5px;
+    }
+
+    header .nav-btn ul {
+        display: none;
+    }
+
+    main .container .row {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    main .container .row .main-img {
+        width: 100%;
+    }
+
+    main .container .row .main-caption {
+        width: 100%;
+        padding: 50px 220px 20px 80px;
+        margin-top: 0px;
+    }
+
+    main .container .row .main-caption h1 {
+        font-size: 60px;
+    }
+
+    main .container .row .main-caption p {
+        font-size: 28px;
+    }
+
+    main .container .row .main-caption p>i {
+        font-size: 32px;
+    }
+
+    .our-services .container {
+        width: 90%;
+        padding: 50px 0;
+    }
+
+    .our-services .container .row .our-services-caption {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .our-services .container .row .our-services-caption .cards {
+        margin-top: 80px;
+        display: flex;
+    }
+
+    .our-services .container .row .our-services-caption .cards .row {
+        margin-bottom: 10px;
+    }
+
+    .our-services .container .row .our-services-caption .cards .row .card {
+        width: 99%;
+        margin-bottom: 5px;
+    }
+
+    .our-services .container .row .our-services-caption .cards .row .card h3 {
+        font-size: 24px;
+    }
+
+    .our-services .container .row .our-services-img {
+        width: 100%;
+    }
+
+    .complete-desing .container {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .complete-desing .container .row {
+        width: 80%;
+    }
+
+    .complete-desing .container .row .card {
+        width: 100%;
+    }
+
+    .complete-desing .container .row .card h3 {
+        font-size: 38px;
+    }
+
+    .complete-desing .container .row .card img {
+        width: 100%;
+        height: 380px;
+    }
+
+    .complete-desing .container .row .card p {
+        font-size: 22px;
+    }
+
+    .complete-desing .container .row .card a {
+        font-size: 24px;
+    }
+
+    .complete-desing .container button {
+        margin-top: 30px;
+        padding: 25px 60px;
+    }
+
+    .complete-desing .container button a {
+        font-size: 19px;
+    }
+
+
+    .rooms h2 {
+        padding: 50px 0px;
+    }
+
+    .rooms .row {
+        width: 90%;
+    }
+
+    .rooms .row .card {
+        width: 100%;
+        padding-bottom: 0px;
+        margin-bottom: 30px;
+    }
+
+    .rooms .row .card .caption {
+        padding: 50px 30px;
+    }
+
+    .rooms .row .card img {
+        height: 390px;
+    }
+
+    .rooms .row .card h3 {
+        font-size: 30px;
+    }
+
+    .rooms .row .card h4 {
+        font-size: 30px;
+    }
+
+    .rooms .row .card p {
+        font-size: 19px;
+    }
+
+    .rooms .row .card a {
+        font-size: 19px;
+    }
+
+
+    .grids .container .row {
+        width: 98%;
+        margin-bottom: 2px;
+    }
+
+    .grids .container .row .caption {
+        width: 24%;
+        padding: 20px 0px 0 0;
+    }
+
+    .grids .container .row .caption p {
+        font-size: 18px;
+    }
+
+    .grids .container .row .caption a {
+        color: black;
+        font-size: 18px;
+    }
+
+    .company .row {
+        width: 80%;
+    }
+
+    .company .row .company-caption {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .company .row .company-caption h5 {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+
+    .company .row .company-caption p {
+        font-size: 24px;
+    }
+
+    .company .row .card {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .company .row .card ul li {
+        font-size: 24px;
+    }
+
+    .company .row .card img {
+        padding-bottom: 0px;
+    }
+
+    .offers {
+        padding: 70px 0;
+    }
+
+    .offers .row {
+        width: 80%;
+    }
+
+    .offers .row .left-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .offers .row .left-card img {
+        width: 100%;
+    }
+
+    .offers .row .left-card h3 {
+        font-size: 32px;
+    }
+
+    .offers .row .left-card p {
+        font-size: 21px;
+    }
+
+    .offers .row .right-card {
+        width: 100%;
+    }
+
+
+    .offers .row .right-card .caption i {
+        font-size: 64px;
+        padding-bottom: 15px;
+    }
+
+    .offers .row .right-card .caption p {
+        font-size: 28px;
+        line-height: 35px;
+        padding-right: 0px;
+    }
+
+    .offers .row .right-card .caption2 {
+        padding: 20px 30px;
+    }
+
+    .offers .row .right-card .caption2 p {
+        font-size: 21px;
+    }
+
+    .offers .row .right-card .caption2 button {
+        padding: 25px 50px;
+    }
+
+    .offers .row .right-card .caption2 button>a {
+        font-size: 17px;
+    }
+
+    .portfolio h2::before {
+        left: 44%;
+    }
+
+    .portfolio .row {
+        width: 90%;
+    }
+
+    .portfolio p {
+        font-size: 38px;
+        width: 100%;
+    }
+
+    .contacts .contact-card .row {
+        padding: 30px 20px;
+        width: 90%;
+    }
+
+    .contacts .contact-card .row .left {
+        width: 100%;
+    }
+
+    .contacts .contact-card .row .left p {
+        font-size: 22px;
+    }
+
+    .contacts .contact-card .row .right {
+        width: 100%;
+    }
+
+    .contacts .contact-card .row .right h4 {
+        font-size: 38px;
+    }
+
+    .contacts .contact-card .row .right p {
+        font-size: 22px;
+        padding-right: 0;
+    }
+
+    .contacts .contact-card .row .right input {
+        height: 55px;
+        width: 75%;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .contacts .contact-card .row .right button a {
+        font-size: 18px;
+    }
+
+    .contacts .row2 {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        color: white;
+    }
+
+    .contacts .row2 .card {
+        width: 100%;
+    }
+
+    .contacts .row2 .card i {
+        font-size: 38px;
+    }
+
+    .contacts .row2 .card h3 {
+        font-size: 26px;
+    }
+
+    .contacts .row2 .card p {
+        font-size: 20px;
+        color: white;
+    }
+
+    footer .copy p span {
+        color: var(--second-color);
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    footer .copy {
+        margin-top: 60px;
+    }
+}
+
+@media(max-width:600px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    .heading {
+        padding-top: 50px;
+    }
+
+    .heading p {
+        padding: 30px 45px;
+        color: #808080;
+        font-size: 17px;
+    }
+
+    button.contact {
+        margin: 20px 0;
+        padding: 20px 30px;
+    }
+
+    button.contact>a {
+        font-size: 14px;
+    }
+
+    header .logo>img {
+        width: 100px;
+        height: 40px;
+    }
+
+    main .container .row .main-caption {
+        padding: 30px 20px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    main .container .row .main-caption h1 {
+        font-size: 40px;
+    }
+
+    main .container .row .main-caption p {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    main .container .row .main-caption p>i {
+        font-size: 24px;
+    }
+
+    .our-services .container {
+        width: 85%;
+        padding: 30px 0;
+    }
+
+    .our-services .container .row .our-services-caption {
+        padding: 20px 0;
+    }
+
+    .our-services .container .row .our-services-caption .cards {
+        margin-top: 20px;
+    }
+
+    .our-services .container .row .our-services-caption .cards .row {
+        margin-bottom: 5px;
+    }
+
+    .our-services .container .row .our-services-caption .cards .row .card {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 8px;
+    }
+
+    .our-services .container .row .our-services-caption .cards .row .card h3 {
+        font-size: 18px;
+    }
+
+    .complete-desing .container {
+        padding: 20px 0;
+    }
+
+    .complete-desing .container .row {
+        width: 85%;
+    }
+
+    .complete-desing .container .row .card h3 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .complete-desing .container .row .card img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .complete-desing .container .row .card p {
+        font-size: 17px;
+    }
+
+    .complete-desing .container .row .card a {
+        font-size: 18px;
+    }
+
+    .complete-desing .container button {
+        margin-top: 20px;
+        padding: 20px 30px;
+    }
+
+    .complete-desing .container button a {
+        font-size: 14px;
+    }
+
+    .rooms {
+        padding: 20px;
+    }
+
+    .rooms h2 {
+        padding: 25px 0px;
+    }
+
+    .rooms .row {
+        width: 90%;
+    }
+
+    .rooms .row .card {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .rooms .row .card .caption {
+        padding: 15px 20px;
+    }
+
+    .rooms .row .card h3 {
+        font-size: 24px;
+    }
+
+    .rooms .row .card h4 {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+
+    .rooms .row .card p {
+        font-size: 16px;
+    }
+
+    .rooms .row .card a {
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 2px solid #c0c0c0;
+        transition: all 0.2s;
+    }
+
+    .grids .container .row {
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .grids .container .row .caption {
+        width: 50%;
+        padding: 20px 10px 0;
+    }
+
+    .grids .container .row .caption p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .grids .container .row .caption a {
+        font-size: 16px;
+    }
+
+    .grids .container .row img {
+        height: 300px;
+    }
+
+    .grids .container .row .first-img {
+        width: 50%;
+    }
+
+    .grids .container .row .second-img {
+        width: 100%;
+    }
+
+    .grids .container .row .third-img {
+        width: 100%;
+    }
+
+    .grids .container .row .fourth-img {
+        width: 50%;
+    }
+
+    .company .row {
+        width: 85%;
+    }
+
+    .company .row .company-caption {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .company .row .company-caption h5 {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    .company .row .company-caption p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .company .row .company-caption button {
+        margin-left: 90px;
+    }
+
+    .company .row .card {
+        padding: 30px;
+    }
+
+    .company .row .card ul li {
+        font-size: 20px;
+    }
+
+    .offers {
+        padding: 30px 0;
+    }
+
+    .offers .row {
+        width: 85%;
+    }
+
+    .offers .row .left-card {
+        margin-bottom: 20px;
+    }
+
+    .offers .row .left-card h3 {
+        font-size: 26px;
+    }
+
+    .offers .row .left-card p {
+        font-size: 18px;
+    }
+
+    .offers .row .right-card .caption i {
+        font-size: 58px;
+        padding-bottom: 10px;
+    }
+
+    .offers .row .right-card .caption p {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .offers .row .right-card .caption2 {
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .offers .row .right-card .caption2 p {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .offers .row .right-card .caption2 button {
+        padding: 20px 40px;
+    }
+
+    .offers .row .right-card .caption2 button>a {
+        font-size: 14px;
+    }
+
+    .portfolio {
+        padding: 30px 0;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 60px;
+    }
+
+    .portfolio h2::before {
+        width: 80px;
+        top: 130%;
+        left: 41%;
+    }
+
+    .portfolio h2::after {
+        height: 10px;
+        width: 10px;
+        top: 108%;
+        left: 48%;
+    }
+
+    .portfolio .row {
+        width: 85%;
+    }
+
+    .portfolio .row .imgs {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .portfolio .row .imgs img {
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .portfolio p {
+        margin-top: 10px;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .contacts {
+        padding: 40px 0;
+    }
+
+    .contacts .contact-card .row {
+        padding: 30px 20px;
+        width: 95%;
+    }
+
+    .contacts .contact-card .row .left p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .contacts .contact-card .row .right {
+        text-align: center;
+    }
+
+    .contacts .contact-card .row .right h4 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .contacts .contact-card .row .right p {
+        font-size: 18px;
+        padding-right: 10px;
+        text-align: left;
+    }
+
+    .contacts .contact-card .row .right input {
+        height: 50px;
+        width: 95%;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .contacts .contact-card .row .right button {
+        padding: 20px 25px;
+        margin-top: 15px;
+    }
+
+    .contacts .contact-card .row .right button a {
+        font-size: 14px;
+    }
+
+    .contacts .row2 {
+        width: 90%;
+    }
+
+    .contacts .row2 .card i {
+        font-size: 30px;
+    }
+
+    .contacts .row2 .card h3 {
+        font-size: 20px;
+    }
+
+    .contacts .row2 .card p {
+        font-size: 16px;
+        color: white;
+    }
+
+    footer p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    footer .copy {
+        margin-top: 40px;
+    }
+}

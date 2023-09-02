@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    --main-color: #f2f2f2;
+    --second-color: #f05510;
+    --p-color: #111111;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 700px;
+    line-height: 1.1;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--p-color);
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+button a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+}
+
+header .row {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border-bottom: 1px solid #ededf0;
+}
+
+header .logo>img {
+    width: 110px;
+    height: 40px;
+}
+
+header .row .menu-btn {
+    display: none;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+header .row .menu-btn:hover {
+    color: var(--second-color);
+}
+
+header .nav-btn ul {
+    margin-top: 12px;
+}
+
+header .nav-btn ul li {
+    padding-left: 25px;
+}
+
+header .nav-btn ul li a {
+    color: var(--p-color);
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 27px;
+}
+
+header .nav-btn ul li a:hover {
+    color: var(--second-color);
+    border-color: var(--second-color);
+}
+
+main {
+    background-color: var(--second-color);
+}
+
+main .contact-box {
+    padding: 70px 0 0;
+}
+
+main .contact-box .row {
+    width: 76%;
+    margin: auto;
+}
+
+main .contact-box .row .box-img {
+    width: 35%;
+}
+
+main .contact-box .row .box-img img {
+    width: 100%;
+}
+
+main .contact-box .row .box-content {
+    background-color: #fff;
+    width: 65%;
+    padding: 70px;
+}
+
+main .contact-box .row .box-content h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+main .contact-box .row .box-content label {
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+main .contact-box .row .box-content textarea,
+main .contact-box .row .box-content input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(122, 120, 120);
+    font-size: 17px;
+    margin: 15px 0;
+    padding-left: 10px;
+    transition: all 0.2s;
+}
+
+main .contact-box .row .box-content input {
+    height: 40px;
+}
+
+main .contact-box .row .box-content input:focus {
+    outline: none;
+    border-color: var(--second-color);
+}
+
+main .contact-box .row .box-content textarea:focus {
+    outline: none;
+    border-color: var(--second-color);
+}
+
+main .contact-box .row .box-content textarea {
+    height: 150px;
+}
+
+main .contact-box .row .box-content input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+main .contact-box .row .box-content .checkbox {
+    display: flex;
+}
+
+main .contact-box .row .box-content .checkbox label {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main .contact-box .row .box-content .checkbox label a {
+    color: var(--second-color);
+    transition: 0.2s;
+}
+
+main .contact-box .row .box-content .checkbox label a:hover {
+    color: #c56b44;
+}
+
+main .contact-box .row .box-content button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 20px 65px;
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+main .contact-box .row .box-content button:hover {
+    background-color: #111111;
+}
+
+main .contact-box .row .box-content button a {
+    font-size: 18px;
+}
+
+.contacts {
+    padding-bottom: 70px;
+    margin-top: -5px;
+    background-color: var(--second-color);
+}
+
+.contacts .contact-card .row {
+    padding: 40px 30px;
+    background-color: #fff;
+    width: 76%;
+    margin: auto;
+}
+
+.contacts .contact-card .row .left {
+    width: 50%;
+}
+
+.contacts .contact-card .row .left p {
+    margin: 25px 0;
+    padding-right: 25px;
+}
+
+.contacts .contact-card .row .right {
+    width: 50%;
+}
+
+.contacts .contact-card .row .right h4 {
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.contacts .contact-card .row .right p {
+    margin: 25px 0;
+}
+
+.contacts .contact-card .row .right input {
+    height: 45px;
+    width: 55%;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 40px;
+    color: #808080;
+    border: 2px solid #d9dae0;
+    background-color: #d9dae0;
+}
+
+.contacts .contact-card .row .right input:focus {
+    border-color: var(--second-color);
+    outline: none;
+    transition: 0.3s;
+}
+
+.contacts .contact-card .row .right button {
+    padding: 25px 60px;
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: var(--second-color);
+    border: none;
+    transition: all 0.2s;
+}
+
+.contacts .contact-card .row .right button:hover {
+    background-color: #111111;
+}
+
+.contacts .contact-card .row .right button a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contacts .row2 {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.contacts .row2 .card {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.contacts .row2 .card i {
+    font-size: 30px;
+}
+
+.contacts .row2 .card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.contacts .row2 .card p {
+    font-size: 18px;
+    color: white;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #333333;
+}
+
+footer .copy p span {
+    color: var(--second-color);
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+footer .copy {
+    margin-top: 90px;
+}
+
+footer .copy a {
+    color: var(--second-color);
+}
+
+@media(max-width:950px) {
+
+    h2 {
+        font-size: 44px;
+    }
+
+    button.contact {
+        margin: 30px 0;
+        padding: 30px 75px;
+    }
+
+    button.contact>a {
+        font-size: 18px;
+    }
+
+    header .logo>img {
+        width: 120px;
+        height: 45px;
+    }
+
+    header .row .menu-btn {
+        display: block;
+        margin-left: auto;
+        margin-top: 5px;
+    }
+
+    header .nav-btn ul {
+        display: none;
+    }
+
+    main .contact-box {
+        padding: 50px 0 0;
+    }
+
+    main .contact-box .row {
+        width: 95%;
+    }
+
+    main .contact-box .row .box-img {
+        width: 40%;
+    }
+
+    main .contact-box .row .box-content {
+        width: 60%;
+        padding: 40px;
+    }
+
+    main .contact-box .row .box-content h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    main .contact-box .row .box-content label {
+        font-size: 18px;
+    }
+
+    main .contact-box .row .box-content textarea,
+    main .contact-box .row .box-content input {
+        margin: 12px 0;
+    }
+
+    main .contact-box .row .box-content input {
+        height: 45px;
+    }
+
+    main .contact-box .row .box-content textarea {
+        height: 110px;
+    }
+
+    main .contact-box .row .box-content input[type=checkbox] {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+
+    main .contact-box .row .box-content .checkbox label {
+        margin-top: 14px;
+        font-size: 18px;
+    }
+
+    main .contact-box .row .box-content button {
+        margin-top: 20px;
+        padding: 25px 65px;
+    }
+
+    main .contact-box .row .box-content button a {
+        font-size: 20px;
+    }
+
+    .contacts {
+        margin-top: -8px;
+    }
+
+    .contacts .contact-card .row {
+        padding: 40px 20px;
+        width: 95%;
+        text-align: center;
+    }
+
+    .contacts .contact-card .row .left {
+        width: 100%;
+    }
+
+    .contacts .contact-card .row .left p {
+        font-size: 24px;
+    }
+
+    .contacts .contact-card .row .right {
+        width: 100%;
+    }
+
+    .contacts .contact-card .row .right h4 {
+        font-size: 42px;
+    }
+
+    .contacts .contact-card .row .right p {
+        font-size: 24px;
+        padding-right: 0;
+    }
+
+    .contacts .contact-card .row .right input {
+        height: 65px;
+        width: 75%;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .contacts .contact-card .row .right button {
+        padding: 25px 50px;
+    }
+
+    .contacts .contact-card .row .right button a {
+        font-size: 18px;
+    }
+
+    .contacts .row2 {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        color: white;
+    }
+
+    .contacts .row2 .card {
+        width: 100%;
+    }
+
+    .contacts .row2 .card i {
+        font-size: 38px;
+    }
+
+    .contacts .row2 .card h3 {
+        font-size: 26px;
+    }
+
+    .contacts .row2 .card p {
+        font-size: 20px;
+        color: white;
+    }
+
+    footer .copy p span {
+        color: var(--second-color);
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    footer .copy {
+        margin-top: 60px;
+    }
+}
+
+@media(max-width:600px) {
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button.contact {
+        margin: 20px 0;
+        padding: 20px 30px;
+    }
+
+    button.contact>a {
+        font-size: 14px;
+    }
+
+    header .logo>img {
+        width: 100px;
+        height: 40px;
+    }
+
+    main .contact-box {
+        padding: 30px 0 0;
+    }
+
+    main .contact-box .row {
+        width: 95%;
+    }
+
+    main .contact-box .row .box-img {
+        display: none;
+    }
+
+    main .contact-box .row .box-content {
+        width: 100%;
+        padding: 35px;
+    }
+
+    main .contact-box .row .box-content h3 {
+        font-size: 20px;
+    }
+
+    main .contact-box .row .box-content label {
+        font-size: 17px;
+    }
+
+    main .contact-box .row .box-content textarea,
+    main .contact-box .row .box-content input {
+        margin: 10px 0;
+    }
+
+    main .contact-box .row .box-content input {
+        height: 50px;
+    }
+
+    main .contact-box .row .box-content textarea {
+        height: 150px;
+    }
+
+    main .contact-box .row .box-content .checkbox label {
+        margin-top: 11px;
+        font-size: 17px;
+    }
+
+    main .contact-box .row .box-content button {
+        padding: 22px 0px;
+    }
+
+    main .contact-box .row .box-content button a {
+        font-size: 18px;
+    }
+
+    .contacts {
+        padding: 40px 0;
+    }
+
+    .contacts .contact-card .row {
+        padding: 30px 20px;
+        width: 95%;
+        margin-top: -33px;
+    }
+
+    .contacts .contact-card .row .left p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .contacts .contact-card .row .right {
+        text-align: center;
+    }
+
+    .contacts .contact-card .row .right h4 {
+        font-size: 30px;
+    }
+
+    .contacts .contact-card .row .right p {
+        font-size: 16px;
+        padding-right: 0px;
+    }
+
+    .contacts .contact-card .row .right input {
+        height: 60px;
+        width: 98%;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .contacts .contact-card .row .right button {
+        padding: 20px 25px;
+        margin-top: 15px;
+    }
+
+    .contacts .contact-card .row .right button a {
+        font-size: 14px;
+    }
+
+    .contacts .row2 {
+        width: 90%;
+    }
+
+    .contacts .row2 .card i {
+        font-size: 30px;
+    }
+
+    .contacts .row2 .card h3 {
+        font-size: 20px;
+    }
+
+    .contacts .row2 .card p {
+        font-size: 16px;
+        color: white;
+    }
+
+    footer p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    footer .copy {
+        margin-top: 40px;
+    }
+}

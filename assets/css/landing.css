@@ -1,0 +1,1291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    --main-color: #f2f3f7;
+    --main-color2: #ffffff;
+    --second-color: #f05510;
+    --p-color: #111111;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: 700px;
+    line-height: 1.1;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    color: var(--p-color);
+}
+
+button.contact {
+    margin-top: 20px;
+    padding: 20px 65px;
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 40px;
+}
+
+button.contact>a {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+button.contact:hover {
+    animation: vibration .1s infinite;
+    background-color: #111111;
+}
+
+@keyframes vibration {
+    0% {
+        transform: rotate(0.5deg);
+    }
+
+    25% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-0.5deg);
+    }
+
+    75% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0.5deg);
+    }
+}
+
+header {
+    width: 100%;
+}
+
+header .row {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border-bottom: 1px solid #ededf0;
+}
+
+header .logo>img {
+    width: 110px;
+    height: 40px;
+}
+
+header .row .menu-btn {
+    display: none;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+header .row .menu-btn:hover {
+    color: var(--second-color);
+}
+
+header .nav-btn ul {
+    margin-top: 12px;
+}
+
+header .nav-btn ul li {
+    padding-left: 25px;
+}
+
+header .nav-btn ul li a {
+    color: var(--p-color);
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 27px;
+}
+
+header .nav-btn ul li a:hover {
+    color: var(--second-color);
+    border-color: var(--second-color);
+}
+
+main .container {
+    background-color: var(--main-color);
+}
+
+main .container .row {
+    width: 100%;
+}
+
+main .container .row .main-img {
+    width: 50%;
+}
+
+main .container .row .main-img img {
+    width: 100%;
+    height: 90vh;
+}
+
+main .container .row .main-caption {
+    width: 50%;
+    padding-right: 320px;
+    margin-top: 180px;
+}
+
+main .container .row .main-caption h1 {
+    font-size: 52px;
+    padding-bottom: 20px;
+}
+
+main .container .row .main-caption p {
+    font-size: 22px;
+    color: #111111;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+
+main .container .row .main-caption p>i {
+    color: var(--second-color);
+    font-size: 24px;
+}
+
+.our-services {
+    background-color: var(--second-color);
+    text-align: center;
+}
+
+.our-services .container {
+    width: 100%;
+    margin: auto;
+    padding: 70px 0 300px;
+}
+
+.our-services .container .our-services-caption {
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+
+.our-services .container .our-services-caption h2 {
+    width: 45%;
+    margin: auto;
+}
+
+.our-services .container .our-services-caption .cards {
+    margin-top: 80px;
+}
+
+.our-services .container .our-services-caption .cards .row {
+    width: 75%;
+    margin: auto;
+}
+
+.our-services .container .our-services-caption .cards .row .card {
+    width: 24%;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+.our-services .container .our-services-caption .cards .row .card img {
+    height: 70px;
+    width: 70px;
+}
+
+.our-services .container .our-services-caption .cards .row .card h3 {
+    color: #808080;
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.our-services .container .products-caption {
+    color: white;
+}
+
+.our-services .container .products-caption h2 {
+    padding: 100px 0 40px;
+}
+
+.our-services .container .products-caption p {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 35px;
+    width: 55%;
+    margin: auto;
+}
+
+section.products-imgs {
+    text-align: center;
+    margin-bottom: -80px;
+}
+
+section.products-imgs .row {
+    width: 75%;
+    margin: auto;
+    transform: translateY(-220px);
+}
+
+section.products-imgs .row .img {
+    width: 31%;
+    height: 330px;
+    margin-bottom: 35px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+section.products-imgs .row .img img {
+    width: 100%;
+    height: 330px;
+    transition: all 0.4s ease-in-out;
+}
+
+section.products-imgs .row .img:hover img {
+    transform: scale(1.1);
+    filter: brightness(.9);
+}
+
+section.products-imgs button {
+    padding: 20px 60px;
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 50px;
+    transform: translateY(-180px);
+    transition: 0.3s;
+}
+
+section.products-imgs button:hover {
+    background-color: black;
+}
+
+section.products-imgs button a {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+section.planning {
+    background-color: #ffffff;
+}
+
+section.planning .row .planning-caption {
+    width: 50%;
+    padding: 150px;
+}
+
+section.planning .row .planning-caption h4 {
+    color: #808080;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    padding: 0 0 15px 0;
+}
+
+section.planning .row .planning-caption h2 {
+    font-weight: 600;
+}
+
+section.planning .row .planning-caption p {
+    font-size: 17px;
+    line-height: 1.5;
+    padding-right: 40px;
+    margin: 15px 0 0 0;
+}
+
+section.planning .row .planning-caption button {
+    padding: 22px 70px;
+    background-color: var(--second-color);
+    border-radius: 50px;
+    border: none;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+section.planning .row .planning-caption button:hover {
+    background-color: black;
+}
+
+section.planning .row .planning-caption button a {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section.planning .row .planning-photos {
+    width: 50%;
+}
+
+section.planning .row .planning-photos .row .card {
+    width: 49.7%;
+    margin-bottom: 5px;
+    background-color: red;
+    height: 350px;
+    background-size: cover;
+}
+
+section.planning .row .planning-photos .row .card1 {
+    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../../../assets/imgs/card\ 1.jpg);
+}
+
+section.planning .row .planning-photos .row .card2 {
+    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../../../assets/imgs/card2.jpg);
+}
+
+section.planning .row .planning-photos .row .card3 {
+    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../../../assets/imgs/card3.jpg);
+}
+
+section.planning .row .planning-photos .row .card4 {
+    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.581), rgba(0, 0, 0, 0.647)), url(../../../assets/imgs/card4.jpg);
+}
+
+section.planning .row .planning-photos .row {
+    text-align: center;
+}
+
+section.planning .row .planning-photos .row h3 {
+    color: white;
+    font-size: 26px;
+    margin-top: 35%;
+}
+
+section.planning .row .planning-photos .row i {
+    font-size: 28px;
+    color: white;
+    padding: 15px;
+    background-color: var(--second-color);
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+section.our-company {
+    width: 60%;
+    margin: auto;
+    padding: 80px 10px;
+}
+
+section.our-company .row .caption {
+    width: 50%;
+}
+
+section.our-company .row .caption h2 {
+    padding-left: 20px;
+    line-height: 1.3;
+}
+
+section.our-company .row .caption button {
+    margin-top: 60px;
+}
+
+section.our-company .row .caption .card {
+    padding: 50px 10px;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 200px;
+    width: 90%;
+}
+
+section.our-company .row .caption .card h3 {
+    padding: 0 50px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section.our-company .row .caption .card p {
+    color: white;
+    font-size: 15px;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+section.our-company .row .company-img {
+    width: 50%;
+}
+
+section.our-company .row .company-img .img {
+    width: 70%;
+}
+
+section.our-company .row .company-img .img img {
+    width: 100%;
+}
+
+section.our-company .row .company-img p {
+    margin-top: 70px;
+    padding-right: 70px;
+}
+
+section.building {
+    background-color: var(--second-color);
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+section.building h4 {
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+section.building h2 {
+    margin-bottom: 40px;
+}
+
+section.building p {
+    font-size: 28px;
+    color: white;
+    width: 50%;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+section.building button {
+    padding: 26px 50px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 2px solid white;
+    transition: all 0.1s;
+}
+
+section.building button a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+section.building button:hover {
+    background-color: #fff;
+}
+
+section.building button:hover a {
+    color: black;
+}
+
+section.solutions {
+    padding: 70px 0;
+    text-align: center;
+}
+
+section.solutions .row {
+    width: 60%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+section.solutions .row .card {
+    padding: 20px 10px;
+    text-align: center;
+    width: 22%;
+}
+
+section.solutions .row .card h4 {
+    background-color: var(--second-color);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    height: 110px;
+    width: 110px;
+    padding-top: 35px;
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+    margin-left: 35px;
+}
+
+section.solutions .row .card h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section.working-with {
+    padding: 70px 0;
+    color: white;
+    background-color: var(--second-color);
+    text-align: center;
+}
+
+section.working-with .caption {
+    width: 50%;
+    margin: auto;
+}
+
+section.working-with .caption h2 {
+    padding: 0 80px;
+    font-size: 52px;
+}
+
+section.working-with .caption .row {
+    margin-top: 80px;
+}
+
+section.working-with .caption .row .img {
+    width: 24%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section.working-with .caption .row .img img {
+    width: 100%;
+}
+
+.contacts {
+    padding-bottom: 70px;
+    background-color: var(--second-color);
+}
+
+.contacts .contact-card .row {
+    padding: 30px 20px;
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+}
+
+.contacts .contact-card .row .left {
+    width: 49%;
+}
+
+.contacts .contact-card .row .left p {
+    margin: 25px 0;
+}
+
+.contacts .contact-card .row .right {
+    width: 48%;
+}
+
+.contacts .contact-card .row .right h4 {
+    font-size: 35px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.contacts .contact-card .row .right p {
+    margin: 25px 0;
+    padding-right: 80px;
+}
+
+.contacts .contact-card .row .right input {
+    height: 45px;
+    width: 55%;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 40px;
+    color: #808080;
+    border: 2px solid #d9dae0;
+    background-color: #d9dae0;
+}
+
+.contacts .contact-card .row .right input:focus {
+    border-color: var(--second-color);
+    outline: none;
+    transition: 0.3s;
+}
+
+.contacts .contact-card .row .right button {
+    padding: 20px 50px;
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: var(--second-color);
+    border: none;
+    transition: all 0.2s;
+}
+
+.contacts .contact-card .row .right button:hover {
+    background-color: #111111;
+}
+
+.contacts .contact-card .row .right button a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contacts .row2 {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.contacts .row2 .card {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.contacts .row2 .card i {
+    font-size: 30px;
+}
+
+.contacts .row2 .card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.contacts .row2 .card p {
+    font-size: 18px;
+    color: white;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #333333;
+}
+
+footer .copy p span {
+    color: var(--second-color);
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+footer .copy {
+    margin-top: 90px;
+}
+
+footer .copy a {
+    color: var(--second-color);
+}
+
+@media(max-width:950px) {
+
+    h2 {
+        font-size: 44px;
+    }
+
+    button.contact {
+        margin: 30px 0;
+        padding: 30px 75px;
+    }
+
+    button.contact>a {
+        font-size: 18px;
+    }
+
+    header .logo>img {
+        width: 120px;
+        height: 45px;
+    }
+
+    header .row .menu-btn {
+        display: block;
+        margin-left: auto;
+        margin-top: 5px;
+    }
+
+    header .nav-btn ul {
+        display: none;
+    }
+
+    main .container .row {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    main .container .row .main-img {
+        width: 100%;
+    }
+
+    main .container .row .main-caption {
+        width: 100%;
+        padding: 50px 220px 20px 80px;
+        margin-top: 0px;
+    }
+
+    main .container .row .main-caption h1 {
+        font-size: 60px;
+    }
+
+    main .container .row .main-caption p {
+        font-size: 28px;
+    }
+
+    main .container .row .main-caption p>i {
+        font-size: 32px;
+    }
+
+    .our-services .container .our-services-caption h2 {
+        width: 80%;
+    }
+
+    .our-services .container .our-services-caption .cards {
+        margin-top: 50px;
+    }
+
+    .our-services .container .our-services-caption .cards .row {
+        width: 80%;
+    }
+
+    .our-services .container .our-services-caption .cards .row .card {
+        width: 45%;
+        margin-bottom: 40px;
+        padding: 60px;
+    }
+
+    .our-services .container .our-services-caption .cards .row .card h3 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .our-services .container .products-caption h2 {
+        padding: 70px 0 40px;
+    }
+
+    .our-services .container .products-caption p {
+        line-height: 30px;
+        width: 75%;
+    }
+
+    section.products-imgs {
+        margin-bottom: -90px;
+    }
+
+    section.products-imgs .row {
+        width: 80%;
+    }
+
+    section.products-imgs .row .img {
+        width: 49%;
+        margin-bottom: 15px;
+    }
+
+    section.products-imgs button {
+        padding: 30px 65px;
+    }
+
+    section.products-imgs button a {
+        font-size: 18px;
+    }
+
+    section.planning .row .planning-caption {
+        width: 100%;
+        padding: 50px;
+    }
+
+    section.planning .row .planning-caption p {
+        font-size: 18px;
+    }
+
+    section.planning .row .planning-caption button {
+        padding: 24px 70px;
+    }
+
+    section.planning .row .planning-caption button a {
+        font-size: 15px;
+    }
+
+    section.planning .row .planning-photos {
+        width: 90%;
+        margin: auto;
+    }
+
+    section.planning .row .planning-photos .row .card {
+        width: 49.7%;
+        margin-bottom: 4px;
+    }
+
+    section.planning .row .planning-photos .row h3 {
+        font-size: 28px;
+        margin-top: 30%;
+    }
+
+    section.planning .row .planning-photos .row i {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    section.our-company {
+        width: 90%;
+        padding: 90px 10px;
+    }
+
+    section.our-company .row .caption .card {
+        padding: 50px 10px;
+        margin-top: 100px;
+    }
+
+    section.our-company .row .caption .card h3 {
+        font-size: 26px;
+    }
+
+    section.our-company .row .caption .card p {
+        font-size: 18px;
+    }
+
+    section.our-company .row .company-img .img {
+        width: 90%;
+    }
+
+    section.our-company .row .company-img p {
+        margin-top: 40px;
+        padding-right: 30px;
+        font-size: 20px
+    }
+
+    section.building {
+        padding: 80px 0;
+    }
+
+    section.building h4 {
+        font-size: 18px;
+    }
+
+    section.building p {
+        font-size: 26px;
+        width: 80%;
+    }
+
+    section.building button {
+        padding: 30px 50px;
+    }
+
+    section.building button a {
+        font-size: 16px;
+    }
+
+    section.solutions .row {
+        width: 75%;
+        margin-top: 60px;
+    }
+
+    section.solutions .row .card {
+        width: 23%;
+    }
+
+    section.solutions .row .card h4 {
+        padding-top: 38px;
+        font-size: 32px;
+        margin-left: 0px;
+    }
+
+    section.solutions .row .card h5 {
+        font-size: 20px;
+        margin-left: -15px;
+    }
+
+    section.working-with {
+        padding: 60px 0;
+    }
+
+    section.working-with .caption {
+        width: 90%;
+    }
+
+    section.working-with .caption h2 {
+        padding: 0 40px;
+        font-size: 52px;
+    }
+
+    section.working-with .caption .row .img {
+        width: 23%;
+    }
+
+    .contacts {
+        margin-top: -1px;
+    }
+
+    .contacts .contact-card .row {
+        padding: 40px 20px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .contacts .contact-card .row .left {
+        width: 100%;
+    }
+
+    .contacts .contact-card .row .left p {
+        font-size: 24px;
+    }
+
+    .contacts .contact-card .row .right {
+        width: 100%;
+    }
+
+    .contacts .contact-card .row .right h4 {
+        font-size: 42px;
+    }
+
+    .contacts .contact-card .row .right p {
+        font-size: 24px;
+        padding-right: 0;
+    }
+
+    .contacts .contact-card .row .right input {
+        height: 65px;
+        width: 75%;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .contacts .contact-card .row .right button {
+        padding: 25px 50px;
+    }
+
+    .contacts .contact-card .row .right button a {
+        font-size: 18px;
+    }
+
+    .contacts .row2 {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        color: white;
+    }
+
+    .contacts .row2 .card {
+        width: 100%;
+    }
+
+    .contacts .row2 .card i {
+        font-size: 38px;
+    }
+
+    .contacts .row2 .card h3 {
+        font-size: 26px;
+    }
+
+    .contacts .row2 .card p {
+        font-size: 20px;
+        color: white;
+    }
+
+    footer .copy p span {
+        color: var(--second-color);
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    footer .copy {
+        margin-top: 60px;
+    }
+}
+
+@media(max-width:600px) {
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button.contact {
+        margin: 20px 0;
+        padding: 20px 30px;
+    }
+
+    button.contact>a {
+        font-size: 14px;
+    }
+
+    header .logo>img {
+        width: 100px;
+        height: 40px;
+    }
+
+    main .container .row .main-caption {
+        padding: 30px 20px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    main .container .row .main-img img {
+        height: 450px;
+    }
+
+    main .container .row .main-caption h1 {
+        font-size: 40px;
+    }
+
+    main .container .row .main-caption p {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    main .container .row .main-caption p>i {
+        font-size: 24px;
+    }
+
+    .our-services .container .our-services-caption h2 {
+        width: 90%;
+    }
+
+    .our-services .container .our-services-caption .cards {
+        margin-top: 50px;
+    }
+
+    .our-services .container .our-services-caption .cards .row {
+        width: 80%;
+    }
+
+    .our-services .container .our-services-caption .cards .row .card {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 40px;
+    }
+
+    .our-services .container .our-services-caption .cards .row .card h3 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .our-services .container .products-caption h2 {
+        padding: 30px 0 20px;
+    }
+
+    .our-services .container .products-caption p {
+        line-height: 30px;
+        width: 90%;
+    }
+
+    section.products-imgs {
+        margin-bottom: -150px;
+    }
+
+    section.products-imgs .row .img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    section.products-imgs button {
+        padding: 25px 50px;
+    }
+
+    section.planning .row .planning-caption {
+        width: 100%;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    section.planning .row .planning-caption p {
+        font-size: 18px;
+        padding-right: 0;
+    }
+
+    section.planning .row .planning-caption button {
+        padding: 20px 50px;
+    }
+
+
+    section.planning .row .planning-photos .row .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    section.our-company {
+        padding: 50px 0px;
+    }
+
+    section.our-company .row .caption {
+        width: 100%;
+        text-align: center;
+    }
+
+    section.our-company .row .caption h2 {
+        width: 100%;
+        margin: auto;
+    }
+
+    section.our-company .row .caption button {
+        margin-top: 20px;
+    }
+
+    section.our-company .row .caption .card {
+        padding: 40px 10px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    section.our-company .row .caption .card p {
+        font-size: 16px;
+    }
+
+    section.our-company .row .company-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    section.our-company .row .company-img .img {
+        width: 100%;
+    }
+
+    section.our-company .row .company-img p {
+        margin-top: 20px;
+        padding-right: 0;
+        font-size: 16px
+    }
+
+    section.building {
+        padding: 50px 0;
+    }
+
+    section.building h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    section.building h2 {
+        margin-bottom: 20px;
+    }
+
+    section.building p {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    section.building button {
+        padding: 20px 40px;
+    }
+
+    section.building button a {
+        font-size: 14px;
+    }
+
+    section.solutions {
+        padding: 40px 0;
+    }
+
+    section.solutions .row {
+        width: 90%;
+        margin-top: 0px;
+    }
+
+    section.solutions .row .card {
+        width: 23%;
+        padding: 30px 0px;
+    }
+
+    section.solutions .row .card h4 {
+        padding-top: 20px;
+        font-size: 32px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        height: 85px;
+        width: 85px;
+    }
+
+    section.solutions .row .card h5 {
+        font-size: 16px;
+        margin-left: 0px;
+    }
+
+    section.working-with {
+        padding: 40px 0;
+    }
+
+    section.working-with .caption {
+        width: 100%;
+    }
+
+    section.working-with .caption h2 {
+        padding: 0;
+        font-size: 34px;
+    }
+
+    section.working-with .caption .row .img {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    section.working-with .caption .row .img img {
+        width: 80%;
+    }
+
+    .contacts {
+        padding: 40px 0;
+    }
+
+    .contacts .contact-card .row {
+        padding: 30px 20px;
+        width: 95%;
+    }
+
+    .contacts .contact-card .row .left p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .contacts .contact-card .row .right {
+        text-align: center;
+    }
+
+    .contacts .contact-card .row .right h4 {
+        font-size: 30px;
+    }
+
+    .contacts .contact-card .row .right p {
+        font-size: 16px;
+        padding-right: 0px;
+    }
+
+    .contacts .contact-card .row .right input {
+        height: 60px;
+        width: 98%;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .contacts .contact-card .row .right button {
+        padding: 20px 25px;
+        margin-top: 15px;
+    }
+
+    .contacts .contact-card .row .right button a {
+        font-size: 14px;
+    }
+
+    .contacts .row2 {
+        width: 90%;
+    }
+
+    .contacts .row2 .card i {
+        font-size: 30px;
+    }
+
+    .contacts .row2 .card h3 {
+        font-size: 20px;
+    }
+
+    .contacts .row2 .card p {
+        font-size: 16px;
+        color: white;
+    }
+
+    footer p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    footer .copy {
+        margin-top: 40px;
+    }
+}
