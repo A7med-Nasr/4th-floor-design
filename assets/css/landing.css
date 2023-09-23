@@ -5,6 +5,10 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --main-color: #f2f3f7;
     --main-color2: #ffffff;
@@ -120,13 +124,86 @@ header .nav-btn ul li {
 header .nav-btn ul li a {
     color: var(--p-color);
     transition: all 0.3s;
-    border-bottom: 1px solid transparent;
     padding-bottom: 27px;
+    position: relative;
+}
+
+header .nav-btn ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    border-radius: 50px;
+    height: 5%;
+    top: 98%;
+    left: 0%;
+    background-color: var(--second-color);
+    transition: 0.3s linear;
+}
+
+header .nav-btn ul li a:hover::before {
+    width: 100%;
+    left: 0;
 }
 
 header .nav-btn ul li a:hover {
     color: var(--second-color);
-    border-color: var(--second-color);
+}
+
+.responsive-nav {
+    width: 100%;
+    position: absolute;
+    z-index: 25626256;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    transition: all 0.4s;
+    height: 0px;
+    overflow: hidden;
+}
+
+.responsive-nav ul {
+    font-size: 26px;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.responsive-nav ul li {
+    margin-bottom: 10px;
+}
+
+.responsive-nav ul li a {
+    color: white;
+    transition: all 0.3s;
+}
+
+.responsive-nav ul li a:hover {
+    color: var(--second-color);
+}
+
+.spinner {
+    position: fixed;
+    z-index: 54522;
+    padding: 15px;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s;
+    opacity: 0;
+    background-color: var(--second-color);
+}
+
+.spinner:hover {
+    background-color: #000;
+}
+
+.spinner:hover::before {
+    width: 0;
+    left: 0;
+}
+
+.spinner i {
+    font-size: 18px;
 }
 
 main .container {
